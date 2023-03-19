@@ -69,7 +69,7 @@ export default function PizzaContextProvider({children}) {
         }
     }
 
-    const handleSumar = (id, price, cantidad) => {
+    const handleSumar = (id, img, price,name, cantidad) => {
         const nuevoCarrito = cartItems.map(producto => {
             if (producto.id === id) {
               return { ...producto, cantidad: producto.cantidad + 1, price: producto.price + price/cantidad};
@@ -80,7 +80,7 @@ export default function PizzaContextProvider({children}) {
           setCartItems(nuevoCarrito);
     }   
 
-    const handleRestar = (id, price, cantidad) => {
+    const handleRestar = (id, img, price,name, cantidad) => {
         const nuevoCarrito = cartItems.map(producto => {
             if (producto.id === id) {
                 const nuevaCantidad = producto.cantidad - 1 < 1 ? 1 : producto.cantidad - 1;
@@ -92,7 +92,7 @@ export default function PizzaContextProvider({children}) {
           setCartItems(nuevoCarrito);
     }
     
-    const handleDelete = (id) => {
+    const handleDelete = (id, img, price,name, cantidad) => {
         const nuevoArray = cartItems.filter((item) => id !== item.id)  
         setCartItems(nuevoArray);
     }; 
