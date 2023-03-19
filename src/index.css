@@ -1,0 +1,269 @@
+#root {
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  padding-bottom: 2rem;
+}
+
+.card-pikza {
+  margin-bottom: 2rem;
+  border: 1px solid #ccc;
+}
+
+.card-pikza.card-pikza-carro {
+  margin-bottom: 2rem;
+  border: 0px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 1rem;
+}
+
+.card-pikza.card-pikza-carro .col-lg-6.texto {
+  display: flex;
+  align-items: flex-end;
+}
+
+.card-pikza.card-pikza-carro .col-lg-4.texto {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.box-btns {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.container nav ul {
+  padding-left: 0px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0px;
+}
+
+.container nav ul li {
+  margin-right: 1rem;
+}
+
+.container nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+.container nav ul li a span {
+  color: #000;
+}
+
+header {
+background-color: #76D7C4;
+
+}
+
+header .container {
+padding: .5rem;
+}
+
+.container-home .card-pikza {
+  max-width: 360px;
+} 
+
+.container-home .card-pikza figure {
+  margin-bottom: 0px;
+} 
+
+.container-home .card-pikza .texto {
+  padding: 1rem;
+} 
+
+.container-home .card-pikza .texto h2,
+.container-pizza h2 {
+  text-transform: capitalize;
+  font-size: 24px;
+} 
+
+.container-detalle h4 {
+  text-transform: capitalize;
+  font-size: 24px;
+} 
+
+.container-home .card-pikza .texto p,
+.container-pizza p.ingre {
+  font-weight: 500;
+  font-size: 16px;
+  margin: .8rem 0rem;
+} 
+
+.container-home .card-pikza ul li,
+.container-pizza ul li {
+  position: relative;
+  display: block;
+  padding-left: 0.5rem;
+  margin-bottom: 0.5rem;
+} 
+
+.container-home .card-pikza ul li:before,
+.container-pizza ul li:before {
+  content: url(/pikza-16x16.png);
+  position: absolute;
+  left: -15px;
+  top: 2px;
+  width: 15px;
+  height: 15px;
+}
+
+.container-pizza .bajada-detalle {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-home .card-pikza .texto h4 {
+  font-size: 24px;
+} 
+
+.container-home .card-pikza .box-btns .btn {
+  min-width: 130px;
+} 
+
+.container-home .card-pikza .box-btns .btn,
+.container-pizza .btn {
+  background-color: #2471A3;
+  border: none;
+}
+
+footer {
+  background-color: #76D7C4;
+}
+
+footer .container {
+  padding: .7rem 0rem;
+}
+
+footer .container p {
+  margin-bottom: 0px;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+}
+
+.container-detalle .sumar-restar p {
+  margin-bottom: 0px;
+  font-weight: bold;
+  font-size: 18px;
+} 
+
+.container-detalle .sumar-restar h4 {
+  margin-bottom: 0px;
+} 
+
+.container-detalle .sumar-restar button {
+  color: #fff;
+  font-size: 12px;
+  padding: .5rem .8rem;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+} 
+
+.container-detalle .total {
+  margin-top: 1rem;
+  font-size: 22px;
+  font-weight: bolder;
+} 
+
+.container-detalle button.pagar {
+  max-width: 250px;
+  font-weight: bold;
+} 
+
+button[disabled] {
+  opacity: .5;
+}
+
+.banner-interior {
+  position: relative;
+  height: 18.75rem;
+}
+
+.banner-interior .bg-banner {
+  filter: brightness(.6);
+  width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.banner-interior .texto {
+  position: relative;
+  height: 100%;
+  z-index: 2;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+}
+.banner-interior .texto h1 {
+  color: #fff;
+  font-size: 3rem;
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+ .box-btns {
+   flex-direction: column;
+   align-items: center;
+ }
+
+ .container-home .card-pikza .box-btns .btn {
+   min-width: unset;
+   width: 80%;
+ }
+
+ .container-home .card-pikza .box-btns .btn:first-child {
+  margin-bottom: 1rem;
+ }
+
+ .container-pizza .bajada-detalle {
+  flex-direction: column;
+ }
+ .container-pizza .bajada-detalle button {
+  margin-top: .5rem;
+ }
+
+ .container-detalle .texto{
+   width: 100%;
+   text-align: center;
+ }
+ .container-detalle .texto h4 {
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.container-detalle .box-bajada {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.container-detalle .box-bajada .btn.btn-primary.pagar {
+  margin: 0 auto;
+  min-width: 250px;
+}
+.banner-interior .texto h1 {
+  font-size: 2rem;
+}
+
+}
+
+
+
+
