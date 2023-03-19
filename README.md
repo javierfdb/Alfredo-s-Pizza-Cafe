@@ -7,5 +7,7 @@
 
 [Ver](https://github.com/javierfdb/Alfredo-s-Pizza-Cafe)
 
+## Datos se almacenan en localStorage 
+
 
 
